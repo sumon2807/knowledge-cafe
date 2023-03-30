@@ -1,0 +1,39 @@
+[
+    {
+        "id": "124e13b9-2d54-4b2f-a74d-a77b362d6ead",
+        "author-name": "Jho Biden",
+        "blog-title": "How to get your first job as a self-taught programmer",
+        "cover-img": "https://images.unsplash.com/photo-1619410283995-43d9134e7656?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        "author-img": "https://img.freepik.com/free-photo/cheerful-curly-business-girl-wearing-glasses_176420-206.jpg?w=740&t=st=1680197530~exp=1680198130~hmac=981d042605a7208fe005d2c9fd62611db747ae4417a6a6730533e27e6a8e323e",
+        "readTime": 5,
+        "publishDate": 3
+    },
+    {
+        "id": "13cbc7ed-a61b-4883-9d42-82d7d8642b86",
+        "author-name": "Potin",
+        "blog-title": "My first job as a self-taught programmer",
+        "cover-img": "https://img.freepik.com/free-photo/html-css-collage-concept-with-hacker_23-2150061984.jpg?w=740&t=st=1680196894~exp=1680197494~hmac=43ed23f5b78f5c3067f81cc58e75897f698c06a0ef7a3d57ffa7c7d8d352c5a5",
+        "author-img": "https://img.freepik.com/free-photo/handsome-young-businessman-with-digital-tablet-mobile-phone_329181-9139.jpg?w=360&t=st=1680197481~exp=1680198081~hmac=0934c365a55dcfbe27948b467ede3a0d503811cc7a10c47e7f9c74132b4a3711",
+        "readTime": 10,
+        "publishDate": 3
+    },
+    {
+        "id": "307f166f-1d04-4573-bc37-2f461ea9d4f7",
+        "author-name": "Alex Hill",
+        "blog-title": "How to get your first job",
+        "cover-img": "https://img.freepik.com/free-vector/chatbot-technology-website-template_107791-113.jpg?w=740&t=st=1680196995~exp=1680197595~hmac=c888a06899e17b0aee30a0c66b57ea6fe75022e00bab30ee8634f2df3e11ac24",
+        "author-img": "https://img.freepik.com/free-photo/portrait-successful-man-having-stubble-posing-with-broad-smile-keeping-arms-folded_171337-1267.jpg?w=740&t=st=1680197399~exp=1680197999~hmac=bfaffb6b2d26595a8d1d70b75b966ff7fa5493ae08088af16096fe12d014787f",
+        "readTime": 7,
+        "publishDate": 3
+    },
+    {
+        "id": "4bf9798f-63bc-4a83-b0c6-6a3b816fe922",
+        "author-name": "Donald Tramp",
+        "blog-title": "Self-taught programmer",
+        "cover-img": "https://img.freepik.com/free-vector/ai-machine-learning-template-vector-disruptive-technology-blog-banner_53876-112230.jpg?w=826&t=st=1680197049~exp=1680197649~hmac=57167d5158cc56a4bfa3f177e60923105c89234bc01a78ada1569ae25d68d699",
+        "author-img": "https://img.freepik.com/free-photo/beautiful-young-man-student-businessman-jacket-holds-his-arms-crossed-isolated-light-grey-wall_231208-6135.jpg?w=740&t=st=1680197324~exp=1680197924~hmac=a48b15c286b6cdf381174510de0bcd6b51887c765b32d160d4392f9f591b6976",
+        "readTime": 8,
+        "publishDate": 3
+    }
+]
+    
