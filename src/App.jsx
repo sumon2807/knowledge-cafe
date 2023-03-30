@@ -1,10 +1,10 @@
 import React from 'react';
+import Header from './components/Header/Header';
 
 const App = () => {
   return (
     <div>
-        <button className="btn btn-active btn-secondary">Button</button>
-        <button className="btn btn-active btn-accent">Button</button>
+        <Header></Header>
     </div>
   );
 };
