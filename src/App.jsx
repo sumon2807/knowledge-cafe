@@ -4,6 +4,7 @@ import Header from './components/Header/Header';
 import SideCard from './components/SideCard/SideCard';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Question from './components/Other/Question';
 
 const App = () => {
   // spent to reading total time
@@ -25,17 +26,19 @@ const App = () => {
 // handle bookmark button
 const [bookmurkCount, setBookMarkCount]=useState([]);
 const [blogTitle, setBlogTitle]=useState([]);
-const handleBookMarkTitle=(blogTitle,info,id)=>{
-  const newCount=[...bookmurkCount, info];
+
+const handleBookMarkTitle=(blogTitle, id)=>{
+  console.log(id)
+  const newCount=[...bookmurkCount, id];
   setBookMarkCount(newCount);
   const previousTitle=localStorage.getItem('blogTitle');
+  
   if(previousTitle){
     const newName=JSON.parse(previousTitle);
     newName.push(blogTitle);
     localStorage.setItem('blogTitle', JSON.stringify(newName));
     setBlogTitle(newName);
-
-    handleTostify(id);
+    handleTostify();
   }
   else{
     localStorage.setItem('blogTitle', JSON.stringify([blogTitle]));
@@ -44,7 +47,7 @@ const handleBookMarkTitle=(blogTitle,info,id)=>{
 }
 
 // tostify
-const handleTostify=(id)=>{
+const handleTostify=()=>{
   toast("Already Bookmarked..! Thanks");
 };
 
@@ -63,6 +66,9 @@ const handleTostify=(id)=>{
             ></SideCard>
           </div>
         </div>
+        <div className='other'>
+              <Question></Question>
+          </div>
         <ToastContainer></ToastContainer>
     </div>
   );

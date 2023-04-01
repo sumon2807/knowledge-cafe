@@ -17,7 +17,6 @@ const Card = ({handleReadTime, handleBookMarkTitle, handleWatchTime}) => {
                     key={info.id}
                     handleReadTime={handleReadTime}
                     handleBookMarkTitle={handleBookMarkTitle}
-                    handleWatchTime={handleWatchTime}
                     ></SingleData>)
             }
         </div>
