@@ -20,44 +20,47 @@ const App = () => {
     setReadTime(time);
   }
  }
+
+
 // handle bookmark button
-const [showTitle, setShowTitle]=useState([]);
-const handleBookMarkTitle=(blogTitle)=>{
+const [bookmurkCount, setBookMarkCount]=useState([]);
+const [blogTitle, setBlogTitle]=useState([]);
+const handleBookMarkTitle=(blogTitle,info,id)=>{
+  const newCount=[...bookmurkCount, info];
+  setBookMarkCount(newCount);
   const previousTitle=localStorage.getItem('blogTitle');
   if(previousTitle){
     const newName=JSON.parse(previousTitle);
     newName.push(blogTitle);
     localStorage.setItem('blogTitle', JSON.stringify(newName));
-    setShowTitle(newName);
+    setBlogTitle(newName);
+
+    handleTostify(id);
   }
   else{
     localStorage.setItem('blogTitle', JSON.stringify([blogTitle]));
-    setShowTitle([blogTitle]);
+    setBlogTitle([blogTitle]);
   }
 }
 
 // tostify
-const handleTostify=()=>{
-  toast("Opps Already Bookmarked!");
+const handleTostify=(id)=>{
+  toast("Already Bookmarked..! Thanks");
 };
-
-const [bookmurkCount, setBookMarkCount]=useState([]);
-const handleWatchTime=(info)=>{
-  console.log(info)
-  const newCount=[...bookmurkCount, info];
-  
-  setBookMarkCount(newCount);
-  }
 
   return (
     <div>
         <Header></Header>
         <div className='flex mt-10 justify-between'>
           <div className="card-container">
-            <Card handleReadTime={handleReadTime} handleBookMarkTitle={handleBookMarkTitle} handleWatchTime={handleWatchTime}></Card>
+            <Card handleReadTime={handleReadTime} handleBookMarkTitle={handleBookMarkTitle}></Card>
           </div>
           <div className="side-card">
-            <SideCard readTime={readTime} showTitle={showTitle} bookmurkCount={bookmurkCount}></SideCard>
+            <SideCard 
+            readTime={readTime} 
+            blogTitle={blogTitle}
+            bookmurkCount={bookmurkCount}
+            ></SideCard>
           </div>
         </div>
         <ToastContainer></ToastContainer>
@@ -66,21 +69,3 @@ const handleWatchTime=(info)=>{
 };
 
 export default App;
-
-
-
-// const [read, setRead]=useState('')
-//   const previousTitle=JSON.parse(localStorage.getItem('title'));
-//   let bookMark=[];
-//   const blogTitle={title};
-// if(previousTitle){
-//   const newBookMark=previousTitle + title;
-//   console.log(newBookMark)
-//   localStorage.setItem('title', newBookMark)
-//   setRead(newBookMark);
-// }
-// else{
-//   bookMark.push(blogTitle);
-//   localStorage.setItem('title', JSON.stringify(bookMark));
-//   setRead(bookMark);
-// }
