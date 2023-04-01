@@ -5,12 +5,12 @@ const SingleData = ({info, handleReadTime, handleBookMarkTitle}) => {
 
     return (
         <div>
-            <div className="card bg-base-100 shadow-2xl mx-8 my-4">
+            <div className="card border border-purple-700 shadow-xl mx-8 mb-4">
                 <figure><img className='h-[400px] w-[900px]' src={cover_img} alt="" /></figure>
                 <div className="card-body">
                     <div className='flex justify-between items-center'>
                         <div className="about flex justify-center items-center">
-                            <img className='w-[65px] h-[55px] rounded-full' src={author_img} alt="" />
+                            <img className='w-[60px] h-[50px] rounded-full' src={author_img} alt="" />
                             <div className='ml-4'>
                                 <h2 className="font-semibold">{author_name}</h2>
                                 <p>{publishDate}</p>

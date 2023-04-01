@@ -2,11 +2,11 @@ import React from 'react';
 
 const Question = () => {
     return (
-        <div className='mt-16 bg-sky-300 '>
+        <div className='mt-16 bg-gray-300 '>
             <div className='text-center'>
                 <h1 className='font-bold text-3xl p-3 underline'>Some Question Answer</h1>
             </div>
-            <div className='p-8 grid grid-cols-2'>
+            <div className='p-8 grid lg:grid-cols-2'>
                 <div className='bg-gray-200 m-4 p-4 rounded-lg'>
                     <h1 className='font-bold'>Question-1:Tell me about props and state?</h1>
                     <div className='mb-4'><span className='font-bold'>Props:</span>

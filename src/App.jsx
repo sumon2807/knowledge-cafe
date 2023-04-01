@@ -28,11 +28,9 @@ const [bookmurkCount, setBookMarkCount]=useState([]);
 const [blogTitle, setBlogTitle]=useState([]);
 
 const handleBookMarkTitle=(blogTitle, id)=>{
-  console.log(id)
   const newCount=[...bookmurkCount, id];
   setBookMarkCount(newCount);
   const previousTitle=localStorage.getItem('blogTitle');
-  
   if(previousTitle){
     const newName=JSON.parse(previousTitle);
     newName.push(blogTitle);
@@ -53,18 +51,34 @@ const handleTostify=()=>{
 
   return (
     <div>
-        <Header></Header>
-        <div className='flex mt-10 justify-between'>
-          <div className="card-container">
-            <Card handleReadTime={handleReadTime} handleBookMarkTitle={handleBookMarkTitle}></Card>
+        <div className="header">
+            <Header></Header>
+        </div>
+
+
+        <div className='flex mt-8'>
+        <div className='w-3/4'>
+          <Card handleReadTime={handleReadTime} handleBookMarkTitle={handleBookMarkTitle}></Card>
           </div>
-          <div className="side-card">
-            <SideCard 
+          <div className='w-1/4'>
+          <SideCard 
             readTime={readTime} 
             blogTitle={blogTitle}
             bookmurkCount={bookmurkCount}
             ></SideCard>
           </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <div className='grid lg:grid-cols-2 mt-10 justify-between'>
+          
         </div>
         <div className='other'>
               <Question></Question>
