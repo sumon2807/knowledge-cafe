@@ -21,8 +21,6 @@ const App = () => {
     setReadTime(time);
   }
  }
-
-
 // handle bookmark button
 const [bookmurkCount, setBookMarkCount]=useState([]);
 const [blogTitle, setBlogTitle]=useState([]);
@@ -30,6 +28,7 @@ const [blogTitle, setBlogTitle]=useState([]);
 const handleBookMarkTitle=(blogTitle, id)=>{
   const newCount=[...bookmurkCount, id];
   setBookMarkCount(newCount);
+
   const previousTitle=localStorage.getItem('blogTitle');
   if(previousTitle){
     const newName=JSON.parse(previousTitle);
@@ -43,12 +42,10 @@ const handleBookMarkTitle=(blogTitle, id)=>{
     setBlogTitle([blogTitle]);
   }
 }
-
-// tostify
+// tostify function
 const handleTostify=()=>{
   toast("Already Bookmarked..! Thanks");
 };
-
   return (
     <div>
         <div className="header">

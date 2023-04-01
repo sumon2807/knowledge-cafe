@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import SingleData from '../SingleData/SingleData';
 
-const Card = ({handleReadTime, handleBookMarkTitle, handleWatchTime}) => {
+const Card = ({handleReadTime, handleBookMarkTitle}) => {
     const [information, setInformation] =useState([])
     
     useEffect(()=>{
