@@ -54,13 +54,11 @@ const handleTostify=()=>{
         <div className="header">
             <Header></Header>
         </div>
-
-
-        <div className='flex mt-8'>
-        <div className='w-3/4'>
+        <div className='grid lg:grid-cols-2 mt-8'>
+        <div className=''>
           <Card handleReadTime={handleReadTime} handleBookMarkTitle={handleBookMarkTitle}></Card>
           </div>
-          <div className='w-1/4'>
+          <div className='mx-8'>
           <SideCard 
             readTime={readTime} 
             blogTitle={blogTitle}
@@ -68,21 +66,7 @@ const handleTostify=()=>{
             ></SideCard>
           </div>
         </div>
-
-
-
-
-
-
-
-
-
-        <div className='grid lg:grid-cols-2 mt-10 justify-between'>
-          
-        </div>
-        <div className='other'>
-              <Question></Question>
-          </div>
+        <Question></Question>
         <ToastContainer></ToastContainer>
     </div>
   );

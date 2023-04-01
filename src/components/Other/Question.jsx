@@ -17,7 +17,7 @@ const Question = () => {
                     <div><span className='font-bold'>State:</span>
                     <p className='pb-2'>States can be used in Class Components, Functional components with the use of React Hooks (useState and other methods) while Props don't have this limitation.</p>
                         <p className='pb-2'>State allows us to manage changing data in an application. It's defined as an object where we define key-value pairs specifying various data we want to track in the application.In React, all the code we write is defined inside a component.There are mainly two ways of creating a component in React: <br /><br />1. class-based component 2. functional component</p>
-                        <p className='pb-2'>To make the state change, React gives us a setState function that allows us to update the value of the state.The setState function has the following syntax: setState(updater, [callback])</p>
+                        <p className='pb-2'>To make the state change, React gives us a setState function that allows us to update the value of the state.The setState function has the following <br /> <span className='font-semibold'>syntax: setState(updater, [callback])</span> </p>
                         <p>React components has a built-in state object.The state object is where you store property values that belongs to the component.When the state object changes, the component re-renders.</p>
                     </div>
                 </div>
@@ -25,7 +25,7 @@ const Question = () => {
                     <h1 className='font-bold'>Question-2:How dose state works?</h1>
                     <div><span className='font-bold'>Answer:</span>
                     <p className='pb-2'>The React useState Hook allows you to have state variables in functional components. You pass the initial state to this function, and it returns a variable with the current state value (not necessarily the initial state) and another function to update this value.</p>
-                    <p className='pb-2'>Syntax: The first element is the initial state and the second one is a function that is used for updating the state.const [state, setState] = useState(initialstate)We can also pass a function as an argument if the initial state has to be computed. And the value returned by the function will be used as the initial state.
+                    <p className='pb-2'><span className='font-bold'>Syntax:</span> The first element is the initial state and the second one is a function that is used for updating the state. <span className='font-semibold'>const [state, setState] = useState(initialstate)</span> We can also pass a function as an argument if the initial state has to be computed. And the value returned by the function will be used as the initial state.
                         </p>
                         <p className='pb-2'>React State holds the data for a component. The component, in turn, returns the data contained within the state to the output.</p>
                     <p>React components has a built-in state object.The state object is where you store property values that belongs to the component.When the state object changes, the component re-renders.</p>
@@ -35,7 +35,7 @@ const Question = () => {
                     <h1 className='font-bold'>Question-3:What is the Purpose of useEffect other than fetching data?</h1>
                     <div><span className='font-bold'>Answer:</span>
                         <p className='pb-2'>By using useEffect, you tell React that your component needs to do something after render. React will remember the function you passed, and call it later after performing the DOM updates.</p>
-                        <p className='pb-2'>useEffect() calls after the first render and after every update. In your case axios service will call after render and after every update, you can remove useEffect from your call and put axios in componentDidMount()</p>
+                        <p className='pb-2 font-semibold'>useEffect() calls after the first render and after every update. In your case axios service will call after render and after every update, you can remove useEffect from your call and put axios in componentDidMount()</p>
                         <p>effects run after every completed render, but you can choose to fire them only when certain values have changed. This hook uses an array of "dependencies": variables or states that useEffect listen to for changes. When their values change, the main body of the useEffect hook is executed.</p>
                     </div>
                 </div>

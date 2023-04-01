@@ -6,7 +6,7 @@ const SingleData = ({info, handleReadTime, handleBookMarkTitle}) => {
     return (
         <div>
             <div className="card border border-purple-700 shadow-xl mx-8 mb-4">
-                <figure><img className='h-[400px] w-[900px]' src={cover_img} alt="" /></figure>
+                <figure><img className='w-full' src={cover_img} alt="" /></figure>
                 <div className="card-body">
                     <div className='flex justify-between items-center'>
                         <div className="about flex justify-center items-center">
